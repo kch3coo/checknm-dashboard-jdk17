@@ -1,0 +1,2 @@
+ryd.checknm.dashboard.framework.quartz.config.ChecknmQuartzAutoConfiguration
+ryd.checknm.dashboard.framework.quartz.config.ChecknmAsyncAutoConfiguration

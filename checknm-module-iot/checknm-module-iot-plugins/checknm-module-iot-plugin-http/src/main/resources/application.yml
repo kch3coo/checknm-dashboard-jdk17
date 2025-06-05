@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: checknm-module-iot-plugin-http
+
+checknm:
+  iot:
+    plugin:
+      common:
+        upstream-url: http://127.0.0.1:48080
+        downstream-port: 8093
+        plugin-key: checknm-module-iot-plugin-http
+      http:
+        server-port: 8092

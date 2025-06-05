@@ -1,0 +1,2 @@
+ryd.checknm.dashboard.framework.redis.config.ChecknmRedisAutoConfiguration
+ryd.checknm.dashboard.framework.redis.config.ChecknmCacheAutoConfiguration

@@ -1,0 +1,6 @@
+ryd.checknm.dashboard.framework.apilog.config.ChecknmApiLogAutoConfiguration
+ryd.checknm.dashboard.framework.jackson.config.ChecknmJacksonAutoConfiguration
+ryd.checknm.dashboard.framework.swagger.config.ChecknmSwaggerAutoConfiguration
+ryd.checknm.dashboard.framework.web.config.ChecknmWebAutoConfiguration
+ryd.checknm.dashboard.framework.xss.config.ChecknmXssAutoConfiguration
+ryd.checknm.dashboard.framework.banner.config.ChecknmBannerAutoConfiguration
