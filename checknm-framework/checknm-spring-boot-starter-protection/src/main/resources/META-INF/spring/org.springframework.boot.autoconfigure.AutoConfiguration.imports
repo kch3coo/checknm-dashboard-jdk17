@@ -1,0 +1,4 @@
+ryd.checknm.dashboard.framework.idempotent.config.ChecknmIdempotentConfiguration
+ryd.checknm.dashboard.framework.lock4j.config.ChecknmLock4jConfiguration
+ryd.checknm.dashboard.framework.ratelimiter.config.ChecknmRateLimiterConfiguration
+ryd.checknm.dashboard.framework.signature.config.ChecknmApiSignatureAutoConfiguration

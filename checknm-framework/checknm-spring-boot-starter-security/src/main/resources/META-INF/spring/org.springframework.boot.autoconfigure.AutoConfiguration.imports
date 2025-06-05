@@ -1,0 +1,3 @@
+ryd.checknm.dashboard.framework.security.config.ChecknmSecurityAutoConfiguration
+ryd.checknm.dashboard.framework.security.config.ChecknmWebSecurityConfigurerAdapter
+ryd.checknm.dashboard.framework.operatelog.config.ChecknmOperateLogConfiguration

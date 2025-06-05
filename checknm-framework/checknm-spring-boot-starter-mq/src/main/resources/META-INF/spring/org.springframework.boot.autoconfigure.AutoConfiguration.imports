@@ -1,0 +1,3 @@
+ryd.checknm.dashboard.framework.mq.redis.config.ChecknmRedisMQProducerAutoConfiguration
+ryd.checknm.dashboard.framework.mq.redis.config.ChecknmRedisMQConsumerAutoConfiguration
+ryd.checknm.dashboard.framework.mq.rabbitmq.config.ChecknmRabbitMQAutoConfiguration

@@ -1,0 +1,3 @@
+ryd.checknm.dashboard.framework.datasource.config.ChecknmDataSourceAutoConfiguration
+ryd.checknm.dashboard.framework.mybatis.config.ChecknmMybatisAutoConfiguration
+ryd.checknm.dashboard.framework.translate.config.ChecknmTranslateAutoConfiguration
