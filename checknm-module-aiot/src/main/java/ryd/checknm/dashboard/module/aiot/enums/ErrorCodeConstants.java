@@ -10,4 +10,7 @@ import ryd.checknm.dashboard.framework.common.exception.ErrorCode;
 public interface ErrorCodeConstants {
     ErrorCode SENSOR_INFO_NOT_EXISTS = new ErrorCode(1-060-300-005, "传感器信息不存在");
     ErrorCode SENSOR_INFO_ALREADY_EXISTS = new ErrorCode(1-060-300-016, "传感器信息已存在");
+    ErrorCode MACHINE_INFO_NOT_EXISTS = new ErrorCode(1-060-300-011, "设备信息不存在");
+    ErrorCode MACHINE_LOCATION_INFO_NOT_EXISTS = new ErrorCode(1-060-300-007, "设备位置信息不存在");
+
 }

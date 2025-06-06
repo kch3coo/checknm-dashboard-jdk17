@@ -116,3 +116,62 @@ INSERT INTO `system_dict_data` (sort, label, value, dict_type, status, color_typ
 
 -- AIot 传感器状态 WIRELESS
 INSERT INTO `system_dict_data` (sort, label, value, dict_type, status, color_type, css_class, remark, creator, create_time, updater, update_time, deleted) VALUES(2, 'WIRELESS', '2', 'aiot_sensor_type', 0, '', '', '', '1', '2025-05-29 16:10:13', '1', '2025-05-29 16:10:13', 0);
+
+-- ----------------------------
+-- MachineInfo 菜单
+-- ----------------------------
+
+INSERT INTO system_menu(
+    name, permission, type, sort, parent_id,
+    path, icon, component, status, component_name
+)
+VALUES (
+    '设备信息管理', '', 2, 1, @SystemMenuId,
+    'machine-info', 'fa-solid:warehouse', 'aiot/machineInfo/index', 0, 'MachineInfo'
+);
+
+-- 按钮父菜单ID
+-- 暂时只支持 MySQL。如果你是 Oracle、PostgreSQL、SQLServer 的话，需要手动修改 @parentId 的部分的代码
+SELECT @parentId := LAST_INSERT_ID();
+
+-- 按钮 SQL
+INSERT INTO system_menu(
+    name, permission, type, sort, parent_id,
+    path, icon, component, status
+)
+VALUES (
+    '设备信息查询', 'aiot:machine-info:query', 3, 1, @parentId,
+    '', '', '', 0
+);
+INSERT INTO system_menu(
+    name, permission, type, sort, parent_id,
+    path, icon, component, status
+)
+VALUES (
+    '设备信息创建', 'aiot:machine-info:create', 3, 2, @parentId,
+    '', '', '', 0
+);
+INSERT INTO system_menu(
+    name, permission, type, sort, parent_id,
+    path, icon, component, status
+)
+VALUES (
+    '设备信息更新', 'aiot:machine-info:update', 3, 3, @parentId,
+    '', '', '', 0
+);
+INSERT INTO system_menu(
+    name, permission, type, sort, parent_id,
+    path, icon, component, status
+)
+VALUES (
+    '设备信息删除', 'aiot:machine-info:delete', 3, 4, @parentId,
+    '', '', '', 0
+);
+INSERT INTO system_menu(
+    name, permission, type, sort, parent_id,
+    path, icon, component, status
+)
+VALUES (
+    '设备信息导出', 'aiot:machine-info:export', 3, 5, @parentId,
+    '', '', '', 0
+);
