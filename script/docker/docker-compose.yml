@@ -4,6 +4,7 @@ services:
   mysql:
     container_name: checknm-mysql
     image: mysql:8
+
     restart: unless-stopped
     tty: true
     ports:

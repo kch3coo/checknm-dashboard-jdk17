@@ -1,3 +1,6 @@
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
 -- ----------------------------
 -- Aiot 模块
 -- ----------------------------
@@ -99,7 +102,7 @@ INSERT INTO `system_dict_type` (
   `deleted`
 )
 VALUES (
-  'AIot 传感器类型',        -- name
+  'Aiot 传感器类型',        -- name
   'aiot_sensor_type',        -- type
   0,                    -- status
   '类型：0：WIRED；1：WIRELESS;',        -- remark

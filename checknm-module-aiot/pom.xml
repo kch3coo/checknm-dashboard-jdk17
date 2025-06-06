@@ -37,6 +37,15 @@
             <groupId>ryd.checknm.boot</groupId>
             <artifactId>checknm-spring-boot-starter-test</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>ryd.checknm.boot</groupId>
+            <artifactId>checknm-spring-boot-starter-excel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ryd.checknm.boot</groupId>
+            <artifactId>checknm-spring-boot-starter-biz-data-permission</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
