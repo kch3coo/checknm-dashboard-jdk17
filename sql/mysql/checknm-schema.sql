@@ -131,15 +131,20 @@ CREATE TABLE IF NOT EXISTS machine_measurement_tasks (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
-CREATE TABLE IF NOT EXISTS qrcode_info (
-  id          int unsigned NOT NULL AUTO_INCREMENT,
-  info        varchar(256) NOT NULL,
-  create_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  type        tinyint unsigned NOT NULL,
-  status      tinyint unsigned NOT NULL,
-  PRIMARY KEY (id),
-  unique index qrcode_infomation (info)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE IF NOT EXISTS aiot_qrcode_info (
+                                                id          int unsigned NOT NULL AUTO_INCREMENT COMMENT '二维码id',
+                                                info        varchar(256) NOT NULL COMMENT '二维码信息',
+    create_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '二维码创建时间',
+    type        varchar(255) NOT NULL COMMENT '二维码类型',
+    status      int unsigned NOT NULL COMMENT '二维码状态',
+    `creator`   varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT '' COMMENT '创建者',
+    `updater`   varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT '' COMMENT '更新者',
+    `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+    `deleted`   bit(1) NOT NULL DEFAULT b'0' COMMENT '是否删除',
+    `tenant_id` bigint NOT NULL DEFAULT 0 COMMENT '租户编号',
+    PRIMARY KEY (id),
+    unique index qrcode_infomation (info)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='二维码信息';
 
 
 CREATE TABLE IF NOT EXISTS db_logger (
