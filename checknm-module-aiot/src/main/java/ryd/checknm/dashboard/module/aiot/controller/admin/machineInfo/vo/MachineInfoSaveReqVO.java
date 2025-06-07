@@ -34,7 +34,7 @@ public class MachineInfoSaveReqVO {
     private String deviceType;
 
     @Schema(description = "设备图片")
-    private Blob deviceImage;
+    private byte[] deviceImage;
 
     @Schema(description = "设备位置信息列表")
     private List<MachineLocationInfoDO> machineLocationInfos;

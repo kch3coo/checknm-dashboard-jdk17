@@ -14,6 +14,10 @@ import com.alibaba.excel.annotation.*;
 @ExcelIgnoreUnannotated
 public class MachineInfoRespVO {
 
+    @Schema(description = "设备id", requiredMode = Schema.RequiredMode.REQUIRED)
+    @ExcelProperty("设备id")
+    private Long id;
+
     @Schema(description = "公司名称", requiredMode = Schema.RequiredMode.REQUIRED)
     @ExcelProperty("公司名称")
     private String companyName;
@@ -36,7 +40,7 @@ public class MachineInfoRespVO {
 
     @Schema(description = "设备图片")
     @ExcelProperty("设备图片")
-    private Blob deviceImage;
+    private byte[] deviceImage;
 
     @Schema(description = "最新检测时间")
     @ExcelProperty("最新检测时间")

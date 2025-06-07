@@ -53,7 +53,7 @@ public class MachineInfoDO extends BaseDO {
     /**
      * 设备图片
      */
-    private Blob deviceImage;
+    private byte[] deviceImage;
     /**
      * 最新检测时间
      */

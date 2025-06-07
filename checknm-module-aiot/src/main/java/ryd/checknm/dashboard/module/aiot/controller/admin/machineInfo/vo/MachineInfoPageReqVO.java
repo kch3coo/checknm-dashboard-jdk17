@@ -31,7 +31,7 @@ public class MachineInfoPageReqVO extends PageParam {
     private String deviceType;
 
     @Schema(description = "设备图片")
-    private Blob deviceImage;
+    private byte[] deviceImage;
 
     @Schema(description = "最新检测时间")
     @DateTimeFormat(pattern = FORMAT_YEAR_MONTH_DAY_HOUR_MINUTE_SECOND)
